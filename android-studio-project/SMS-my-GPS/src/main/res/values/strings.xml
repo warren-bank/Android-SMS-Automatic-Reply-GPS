@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS my GPS</string>
+
+    <string name="label_enable">Enable Service</string>
+    <string name="label_sender">Sender:</string>
+    <string name="label_message">Message must begin with:</string>
+    <string name="label_button_cancel">CANCEL</string>
+    <string name="label_button_delete">DELETE</string>
+    <string name="label_button_save">SAVE</string>
+
+    <string name="menu_add">ADD</string>
+
+    <string name="error_missing_required_value">Error: Missing Required Value</string>
+    <string name="error_add_listitem">Error: Could not add new item to list</string>
+</resources>

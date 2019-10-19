@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="app_theme" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">true</item>
+    </style>
+    <style name="dialog_textview" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/dialog_label_text</item>
+        <item name="android:background">@color/dialog_label_background</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:padding">4dp</item>
+    </style>
+</resources>

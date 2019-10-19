@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="listview_background">#FFFFFF</color>
+    <color name="listview_divider">#999999</color>
+
+    <color name="dialog_label_background">#999999</color>
+    <color name="dialog_label_text">#FFFFFF</color>
+</resources>
