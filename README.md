@@ -16,12 +16,12 @@ Android app that listens for incoming SMS text messages and conditionally sends 
 * `ADD` ActionBar menu item:
   * adds new rule to whitelist
 * whitelist rules are compared to all incoming SMS text messages:
-  * `Sender`:
+  * `Sender must end with`:
     * this value specifies a phone number (without any punctuation)
-      * a match occurs when the sender of the SMS message is equal to this exact value
+      * a match occurs when the _sender_ of the SMS message ends with this exact value
   * `Message must begin with`:
     * this value contains any arbitrary string
-      * a match occurs when the body of the SMS message begins with this exact value
+      * a match occurs when the _body_ of the SMS message begins with this exact value
 * whitelist rules can be modified
   * clicking on an existing rule opens a dialog with options to:
     * edit and save changes
@@ -74,6 +74,22 @@ Android app that listens for incoming SMS text messages and conditionally sends 
 
 * minimum supported version of Android:
   * Android 3.0 (API level 11)
+
+#### Version Changelog:
+
+* `v1.1.0`
+  * Preference `Sender` changed to `Sender must end with`
+    * in `v1.0.0`:
+      * exact match
+    * in `v1.1.0`:
+      * value entered in whitelist rule only needs to occur at the end of the SMS `sender`
+      * the purpose for this change is to ignore optional country codes, and such
+        * example:
+          * rule: `9876543210`
+          * SMS sender: `+19876543210`
+          * is match?:
+            * `v1.0.0`: _no_
+            * `v1.1.0`: _yes_
 
 #### Legal:
 

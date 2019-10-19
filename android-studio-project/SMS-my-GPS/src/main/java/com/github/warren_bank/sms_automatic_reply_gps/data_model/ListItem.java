@@ -42,7 +42,7 @@ public final class ListItem {
                 item = arrayList.get(i);
 
                 // required
-                if (!item.sender.equals(sender))
+                if (!sender.endsWith(item.sender))
                     continue;
 
                 prefix_length = item.message_prefix.length();
@@ -56,7 +56,7 @@ public final class ListItem {
 
                 prefix = message.substring(0, prefix_length);
 
-                if (item.message_prefix.equals(prefix))
+                if (prefix.equals(item.message_prefix))
                     return true;
             }
             catch(Exception e) { continue; }

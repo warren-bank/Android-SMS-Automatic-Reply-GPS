@@ -3,7 +3,7 @@
     <string name="app_name">SMS my GPS</string>
 
     <string name="label_enable">Enable Service</string>
-    <string name="label_sender">Sender:</string>
+    <string name="label_sender">Sender must end with:</string>
     <string name="label_message">Message must begin with:</string>
     <string name="label_button_cancel">CANCEL</string>
     <string name="label_button_delete">DELETE</string>
