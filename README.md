@@ -15,7 +15,7 @@ Android app that listens for incoming SMS text messages and conditionally sends 
   * used to enable/disable this service
 * `ADD` ActionBar menu item:
   * adds new rule to whitelist
-* whitelist rules are compared to all incoming SMS text messages:
+* whitelist rules contain fields that are compared to all incoming SMS text messages:
   * `Sender must end with`:
     * this value specifies a phone number (without any punctuation)
       * a match occurs when the _sender_ of the SMS message ends with this exact value
@@ -24,7 +24,7 @@ Android app that listens for incoming SMS text messages and conditionally sends 
       * a match occurs when the _body_ of the SMS message begins with this exact value
 * whitelist rules can be modified
   * clicking on an existing rule opens a dialog with options to:
-    * edit and save changes
+    * edit field values, and save changes
     * delete
 
 #### Functionality:
@@ -38,6 +38,7 @@ Android app that listens for incoming SMS text messages and conditionally sends 
     * `Settings` &gt; `About phone` &gt; `Network` &gt; `Service state` &gt; __In service__
 * when:
   * an incoming SMS text message matches any rule in the whitelist
+    * a whitelist rule is considered a match when _all_ of its fields match<br>(ie: both _sender_ and _message_)
 * then:
   * the sender of the SMS message will receive an automatic reply containing:
     * Latitude
@@ -85,7 +86,7 @@ Android app that listens for incoming SMS text messages and conditionally sends 
       * value entered in whitelist rule only needs to occur at the end of the SMS `sender`
       * the purpose for this change is to ignore optional country codes, and such
         * example:
-          * rule: `9876543210`
+          * field value: `9876543210`
           * SMS sender: `+19876543210`
           * is match?:
             * `v1.0.0`: _no_
@@ -94,7 +95,7 @@ Android app that listens for incoming SMS text messages and conditionally sends 
   * Preference `Sender must end with`
     * adds support for a match-all glob pattern
       * when the value for this field in a rule is exactly: `*`
-      * then the rule will match the SMS sender for all incoming SMS text messages
+      * then the field will match the SMS sender for all incoming SMS text messages
 
 #### Legal:
 
