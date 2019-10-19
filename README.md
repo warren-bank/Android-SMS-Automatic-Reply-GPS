@@ -90,6 +90,11 @@ Android app that listens for incoming SMS text messages and conditionally sends 
           * is match?:
             * `v1.0.0`: _no_
             * `v1.1.0`: _yes_
+* `v1.2.0`
+  * Preference `Sender must end with`
+    * adds support for a match-all glob pattern
+      * when the value for this field in a rule is exactly: `*`
+      * then the rule will match the SMS sender for all incoming SMS text messages
 
 #### Legal:
 

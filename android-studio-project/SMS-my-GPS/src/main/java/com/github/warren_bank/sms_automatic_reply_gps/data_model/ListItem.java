@@ -42,7 +42,7 @@ public final class ListItem {
                 item = arrayList.get(i);
 
                 // required
-                if (!sender.endsWith(item.sender))
+                if (!sender.endsWith(item.sender) && !item.sender.equals("*"))
                     continue;
 
                 prefix_length = item.message_prefix.length();
