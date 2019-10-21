@@ -27,9 +27,19 @@
         <receiver
             android:name=".event.SMSReceiver"
             android:label="@string/app_name">
+
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED" />
+                <data
+                    android:host="*"
+                    android:port="9200"
+                    android:scheme="sms" />
+            </intent-filter>
+
         </receiver>
 
     </application>

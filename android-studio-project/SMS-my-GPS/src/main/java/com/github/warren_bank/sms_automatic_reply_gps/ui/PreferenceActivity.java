@@ -3,7 +3,7 @@ package com.github.warren_bank.sms_automatic_reply_gps.ui;
 import com.github.warren_bank.sms_automatic_reply_gps.R;
 import com.github.warren_bank.sms_automatic_reply_gps.data_model.ListItem;
 import com.github.warren_bank.sms_automatic_reply_gps.data_model.Preferences;
-import com.github.warren_bank.sms_automatic_reply_gps.event.SMSReceiver;
+import com.github.warren_bank.sms_automatic_reply_gps.event.SilentSMSSender;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -78,6 +78,10 @@ public class PreferenceActivity extends Activity {
         switch(menuItem.getItemId()) {
             case R.id.menu_add: {
                 showEditDialog(-1);
+                return true;
+            }
+            case R.id.menu_send_silent_sms: {
+                showSendSilentSmsDialog();
                 return true;
             }
             default: {
@@ -164,6 +168,51 @@ public class PreferenceActivity extends Activity {
                 dialog.dismiss();
 
                 Preferences.setListItems(PreferenceActivity.this, listItems);
+            }
+        });
+
+        dialog.show();
+    }
+
+    // ---------------------------------------------------------------------------------------------
+    // Send Silent SMS Dialog:
+    // ---------------------------------------------------------------------------------------------
+
+    private void showSendSilentSmsDialog() {
+        final Dialog dialog = new Dialog(PreferenceActivity.this, R.style.app_theme);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_send_silent_sms);
+
+        final EditText inputPhone = (EditText) dialog.findViewById(R.id.input_silent_sms_recipient);
+
+        final Button buttonCancel = (Button) dialog.findViewById(R.id.button_cancel);
+        final Button buttonSend   = (Button) dialog.findViewById(R.id.button_send);
+
+        buttonCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        buttonSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String phoneNum = inputPhone.getText().toString().trim();
+
+                if (phoneNum.equals("")) {
+                    Toast.makeText(PreferenceActivity.this, getResources().getString(R.string.error_missing_required_value), Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                boolean OK = SilentSMSSender.send(phoneNum);
+
+                if (!OK) {
+                    Toast.makeText(PreferenceActivity.this, getResources().getString(R.string.error_send_silent_sms), Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                dialog.dismiss();
             }
         });
 

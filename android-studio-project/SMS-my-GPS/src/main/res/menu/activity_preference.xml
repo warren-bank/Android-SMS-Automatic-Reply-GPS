@@ -6,4 +6,9 @@
         android:title="@string/menu_add"
         android:icon="@drawable/menu_add"
         android:showAsAction="always" />
+    <item
+        android:id="@+id/menu_send_silent_sms"
+        android:title="@string/menu_send_silent_sms"
+        android:icon="@drawable/menu_send_silent_sms"
+        android:showAsAction="ifRoom" />
 </menu>

@@ -14,8 +14,9 @@ import android.util.Log;
 import java.util.ArrayList;
 
 public class SMSReceiver extends BroadcastReceiver {
-    private static final String TAG          = "SMSReceiver";
-    private static final String SMS_RECEIVED = "android.provider.Telephony.SMS_RECEIVED";
+    private static final String TAG               = "SMSReceiver";
+    private static final String TEXT_SMS_RECEIVED = "android.provider.Telephony.SMS_RECEIVED";
+    private static final String DATA_SMS_RECEIVED = "android.intent.action.DATA_SMS_RECEIVED";
 
     public void onReceive(Context context, Intent intent) {
         if (!Preferences.isEnabled(context))
@@ -32,12 +33,13 @@ public class SMSReceiver extends BroadcastReceiver {
         if (listItems.isEmpty())
             return;
 
-        if (action.equals(SMS_RECEIVED)) {
-            final SmsMessage[] messages = get_SmsMessages(extras);
+        SmsMessage[] messages = null;
+        String sender         = null;
+        String body           = null;
+        boolean is_match      = false;
 
-            boolean is_match = false;
-            String sender    = null;
-            String body;
+        if (!is_match && action.equals(TEXT_SMS_RECEIVED)) {
+            messages = get_SmsMessages(extras);
 
             for (SmsMessage message : messages) {
                 if (message == null)
@@ -46,9 +48,7 @@ public class SMSReceiver extends BroadcastReceiver {
                 try {
                     sender   = message.getOriginatingAddress().trim();
                     body     = message.getMessageBody().trim();
-                    is_match = ListItem.matches(listItems, sender, body);
-
-                    Log.i(TAG, "SMS received.\nfrom: " + sender + "\nmessage: " + body);
+                    is_match = ListItem.matches(listItems, sender, body);  // must match at least one whitelist rule ('phone number' and 'message prefix' pair)
 
                     if (is_match)
                         break;
@@ -56,8 +56,49 @@ public class SMSReceiver extends BroadcastReceiver {
                 catch (Exception e) { continue; }
             }
 
-            if (is_match)
+            if (is_match) {
+                Log.i(TAG, "SMS received.\nfrom: " + sender + "\nmessage: " + body);
+
                 GPSSender.notify(context, sender);
+            }
+        }
+
+        if (!is_match && action.equals(DATA_SMS_RECEIVED)) {
+            messages = get_SmsMessages(extras);
+
+            byte[] data;
+            StringBuilder data_sb;
+
+            for (SmsMessage message : messages) {
+                if (message == null)
+                    continue;
+
+                try {
+                    data = message.getUserData();
+                    if ((data == null) || (data.length == 0)) continue;
+                    if (data.length != 11) continue;
+
+                    data_sb = new StringBuilder();
+                    for (byte b : data) {
+                        data_sb.append(String.format("%02x", b));
+                    }
+                    body = data_sb.toString().toLowerCase();
+                    if (!body.equals("0a0603b0af8203066a0005")) continue;
+
+                    sender   = message.getOriginatingAddress().trim();
+                    is_match = ListItem.matches(listItems, sender);  // must originate from a whitelisted phone number (excluding globs)
+
+                    if (is_match)
+                        break;
+                }
+                catch (Exception e) { continue; }
+            }
+
+            if (is_match) {
+                Log.i(TAG, "Silent SMS received.\nfrom: " + sender);
+
+                GPSSender.notify(context, sender);
+            }
         }
     }
 
