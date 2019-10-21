@@ -29,6 +29,15 @@ public class PreferenceActivity extends Activity {
     private ArrayAdapter<ListItem>  listAdapter;
 
     // ---------------------------------------------------------------------------------------------
+    // Data Mutation:
+    // ---------------------------------------------------------------------------------------------
+
+    private void handleDataSetChange() {
+        listAdapter.notifyDataSetChanged();
+        Preferences.setListItems(PreferenceActivity.this, listItems);
+    }
+
+    // ---------------------------------------------------------------------------------------------
     // Lifecycle Events:
     // ---------------------------------------------------------------------------------------------
 
@@ -124,7 +133,7 @@ public class PreferenceActivity extends Activity {
             public void onClick(View v) {
                 if (!isAdd) {
                   listItems.remove(position);
-                  listAdapter.notifyDataSetChanged();
+                  handleDataSetChange();
                 }
                 dialog.dismiss();
             }
@@ -164,10 +173,8 @@ public class PreferenceActivity extends Activity {
                     }                    
                 }
 
-                listAdapter.notifyDataSetChanged();
+                handleDataSetChange();
                 dialog.dismiss();
-
-                Preferences.setListItems(PreferenceActivity.this, listItems);
             }
         });
 
