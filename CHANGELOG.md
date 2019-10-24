@@ -48,3 +48,6 @@
 * `v2.0.1`
   * minor fix
     * persist Preference data after deletion of each whitelist rule
+* `v2.1.0`
+  * add 'Direction' to GPS data in SMS text reply
+    * only included when value is valid
