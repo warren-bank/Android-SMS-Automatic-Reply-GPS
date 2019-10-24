@@ -55,3 +55,6 @@
   * minor fix
     * if 'Direction' includes a bearing containing a range of degree values,
       format each degree value to stay within: 0.0 to 360.0
+* `v2.1.2`
+  * minor tweak
+    * truncate SMS reply if it were to exceeds the max length

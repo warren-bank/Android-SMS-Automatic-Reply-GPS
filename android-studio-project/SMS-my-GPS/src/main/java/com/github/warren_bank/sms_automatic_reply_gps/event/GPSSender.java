@@ -43,31 +43,38 @@ public final class GPSSender {
                 float  speed     = location.getSpeed();
                 String direction = getDirection(location);
 
+                SmsManager sms   = SmsManager.getDefault();
+
                 ArrayList<String> messages = new ArrayList<String>();
 
                 messages.add(
-                    String.format(
-                        Locale.US,
-                        "Current Location:\n  Lat: %1$s\n  Lon: %2$s\n  Accuracy (meters): %3$s\n  Speed (meters/sec): %4$s%5$s",
-                        lat,
-                        lon,
-                        accuracy,
-                        speed,
-                        direction
+                    truncateSmsMessage(
+                        sms,
+                        String.format(
+                            Locale.US,
+                            "Current Location:\n  Lat: %1$s\n  Lon: %2$s\n  Accuracy (meters): %3$s\n  Speed (meters/sec): %4$s%5$s",
+                            lat,
+                            lon,
+                            accuracy,
+                            speed,
+                            direction
+                        )
                     )
                 );
                 messages.add(
-                    String.format(
-                        Locale.US,
-                        "Google Maps:\nhttps://www.google.com/maps/search/?api=1&query=%1$s,%2$s",
-                        lat,
-                        lon
+                    truncateSmsMessage(
+                        sms,
+                        String.format(
+                            Locale.US,
+                            "Google Maps:\nhttps://www.google.com/maps/search/?api=1&query=%1$s,%2$s",
+                            lat,
+                            lon
+                        )
                     )
                 );
 
                 Log.i(TAG, "GPS location sent.\nto: " + recipient + "\n" + messages.get(0) + "\n" + messages.get(1));
 
-                SmsManager sms = SmsManager.getDefault();
                 sms.sendMultipartTextMessage(recipient, null, messages, null, null);
             }
             catch (Exception e) {
@@ -132,6 +139,11 @@ public final class GPSSender {
 
         private static float formatBearing(float degrees) {
             return ((360.0f + degrees) % 360.0f);
+        }
+
+        private static String truncateSmsMessage(SmsManager sms, String message) {
+            ArrayList<String> parts = sms.divideMessage(message);
+            return parts.get(0);
         }
     }
 }
