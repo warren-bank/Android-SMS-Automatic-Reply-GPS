@@ -51,3 +51,7 @@
 * `v2.1.0`
   * add 'Direction' to GPS data in SMS text reply
     * only included when value is valid
+* `v2.1.1`
+  * minor fix
+    * if 'Direction' includes a bearing containing a range of degree values,
+      format each degree value to stay within: 0.0 to 360.0

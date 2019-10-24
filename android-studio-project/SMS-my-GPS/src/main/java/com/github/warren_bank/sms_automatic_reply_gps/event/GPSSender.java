@@ -117,8 +117,8 @@ public final class GPSSender {
                   )
                 : String.format(
                     "%1$s-%2$s",
-                    (int) (bearing - accuracy),
-                    (int) (bearing + accuracy)
+                    (int) formatBearing(bearing - accuracy),
+                    (int) formatBearing(bearing + accuracy)
                   );
 
             String direction = String.format(
@@ -128,6 +128,10 @@ public final class GPSSender {
             );
 
             return direction;
+        }
+
+        private static float formatBearing(float degrees) {
+            return ((360.0f + degrees) % 360.0f);
         }
     }
 }
