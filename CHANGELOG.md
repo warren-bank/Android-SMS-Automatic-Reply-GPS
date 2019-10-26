@@ -58,3 +58,14 @@
 * `v2.1.2`
   * minor tweak
     * truncate SMS reply if it were to exceeds the max length
+* `v2.1.3`
+  * minor tweak
+    * change format of URL for Google Maps
+      * old: `https://www.google.com/maps/search/?api=1&query={lat},{lon}`
+      * new: `https://maps.google.com/?q={lat},{lon}`
+      * why:
+        * old:
+          * works in: web browser, [Google Maps](https://play.google.com/store/apps/details?id=com.google.android.apps.maps) app
+          * fails in: [OsmAnd](https://github.com/osmandapp/Osmand) app<br>=&gt; "could not parse geo intent"
+        * new:
+          * works in all

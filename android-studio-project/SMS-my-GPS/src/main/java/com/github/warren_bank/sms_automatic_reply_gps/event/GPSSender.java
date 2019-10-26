@@ -66,7 +66,7 @@ public final class GPSSender {
                         sms,
                         String.format(
                             Locale.US,
-                            "Google Maps:\nhttps://www.google.com/maps/search/?api=1&query=%1$s,%2$s",
+                            "Google Maps:\nhttps://maps.google.com/?q=%1$s,%2$s",
                             lat,
                             lon
                         )
