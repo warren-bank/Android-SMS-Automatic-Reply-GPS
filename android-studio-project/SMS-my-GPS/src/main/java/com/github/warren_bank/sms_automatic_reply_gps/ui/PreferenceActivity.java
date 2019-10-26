@@ -4,6 +4,7 @@ import com.github.warren_bank.sms_automatic_reply_gps.R;
 import com.github.warren_bank.sms_automatic_reply_gps.data_model.ListItem;
 import com.github.warren_bank.sms_automatic_reply_gps.data_model.Preferences;
 import com.github.warren_bank.sms_automatic_reply_gps.event.SilentSMSSender;
+import com.github.warren_bank.sms_automatic_reply_gps.security_model.RuntimePermissions;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -49,18 +50,9 @@ public class PreferenceActivity extends Activity {
         inputEnable = (CheckBox) findViewById(R.id.input_enable);
         listView    = (ListView) findViewById(R.id.listview);
 
-        inputEnable.setChecked(Preferences.isEnabled(PreferenceActivity.this));
-
         listItems   = Preferences.getListItems(PreferenceActivity.this);
         listAdapter = new ArrayAdapter<ListItem>(PreferenceActivity.this, android.R.layout.simple_list_item_1, listItems);
         listView.setAdapter(listAdapter);
-
-        inputEnable.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Preferences.setEnabled(PreferenceActivity.this, inputEnable.isChecked());
-            }
-        });
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -69,6 +61,35 @@ public class PreferenceActivity extends Activity {
                 return;
             }
         });
+
+        if (RuntimePermissions.isEnabled(PreferenceActivity.this)) {
+            inputEnable.setChecked(Preferences.isEnabled(PreferenceActivity.this));
+            inputEnable.setEnabled(true);
+            inputEnable.setClickable(true);
+
+            inputEnable.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Preferences.setEnabled(PreferenceActivity.this, inputEnable.isChecked());
+                }
+            });
+        }
+        else {
+            inputEnable.setChecked(false);
+            inputEnable.setEnabled(false);
+            inputEnable.setClickable(false);
+
+            if (Preferences.isEnabled(PreferenceActivity.this)) {
+                Preferences.setEnabled(PreferenceActivity.this, false);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        RuntimePermissions.onRequestPermissionsResult(PreferenceActivity.this, requestCode, permissions, grantResults);
     }
 
     // ---------------------------------------------------------------------------------------------

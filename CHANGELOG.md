@@ -73,3 +73,6 @@
   * minor tweak
     * prioritize broacast receiver intent filters
       * only important _before_: Android 4.4 (API 19)
+* `v2.1.5`
+  * add runtime permission checks
+    * applies to: Android 6.0+ (API 23)
