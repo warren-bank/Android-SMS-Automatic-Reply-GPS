@@ -69,3 +69,7 @@
           * fails in: [OsmAnd](https://github.com/osmandapp/Osmand) app<br>=&gt; "could not parse geo intent"
         * new:
           * works in all
+* `v2.1.4`
+  * minor tweak
+    * prioritize broacast receiver intent filters
+      * only important _before_: Android 4.4 (API 19)
