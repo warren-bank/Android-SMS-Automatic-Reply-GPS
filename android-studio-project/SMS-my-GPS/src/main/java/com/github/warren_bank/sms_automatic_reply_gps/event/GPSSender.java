@@ -100,7 +100,7 @@ public final class GPSSender {
 
         private static String getDirection(Location location) {
             float bearing  = location.getBearing();
-            float accuracy = (Build.VERSION.SDK_INT >= 23)
+            float accuracy = (Build.VERSION.SDK_INT >= 26)
                 ? location.getBearingAccuracyDegrees()
                 : Float.MIN_VALUE;
 
