@@ -42,6 +42,7 @@ public final class GPSSender {
                 float  accuracy  = location.getAccuracy();
                 float  speed     = location.getSpeed();
                 String direction = getDirection(location);
+                float  msToKmh = (float) 3.6;
 
                 SmsManager sms   = SmsManager.getDefault();
 
@@ -52,28 +53,17 @@ public final class GPSSender {
                         sms,
                         String.format(
                             Locale.US,
-                            "Current Location:\n  Lat: %1$s\n  Lon: %2$s\n  Accuracy (meters): %3$s\n  Speed (meters/sec): %4$s%5$s",
+                            "Location: https://maps.google.com/?q=%1$s,%2$s\nAccuracy: %3$1.1s m\nSpeed: %4$1.1s km/h\nDirection: %5$s",
                             lat,
                             lon,
                             accuracy,
-                            speed,
+                            speed * msToKmh,
                             direction
                         )
                     )
                 );
-                messages.add(
-                    truncateSmsMessage(
-                        sms,
-                        String.format(
-                            Locale.US,
-                            "Google Maps:\nhttps://maps.google.com/?q=%1$s,%2$s",
-                            lat,
-                            lon
-                        )
-                    )
-                );
 
-                Log.i(TAG, "GPS location sent.\nto: " + recipient + "\n" + messages.get(0) + "\n" + messages.get(1));
+                Log.i(TAG, "GPS location sent.\nto: " + recipient + "\n" + messages.get(0));
 
                 sms.sendMultipartTextMessage(recipient, null, messages, null, null);
             }
@@ -129,7 +119,7 @@ public final class GPSSender {
                   );
 
             String direction = String.format(
-                "\n  Direction: %1$s (%2$s deg)",
+                "%1$s (%2$s deg)",
                 quadrant_names[quadrant_index],
                 degree_range
             );
