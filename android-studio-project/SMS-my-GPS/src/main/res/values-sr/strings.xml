@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS моја GPS</string>
+    <string name="menu_add">Додај правило</string>
+    <string name="menu_send_silent_sms">Пошаљи тихо SMS</string>
+    <string name="label_enable">Омогући услугу</string>
+    <string name="label_sender">Пошиљалац мора завршити са:</string>
+    <string name="label_message">Порука мора почети са:</string>
+    <string name="label_silent_sms_recipient">Пошаљи тихо SMS до:</string>
+    <string name="label_button_cancel">ОТКАЖИ</string>
+    <string name="label_button_delete">ИЗБРИШИ</string>
+    <string name="label_button_save">САВЕ</string>
+    <string name="label_button_send">Send</string>
+    <string name="error_missing_required_value">Грешка: Недостаје захтевана вредност</string>
+    <string name="error_add_listitem">Грешка: Није могуће додати нову ставку на листу</string>
+    <string name="error_send_silent_sms">Грешка: Није могуће послати тихо SMS</string>
+</resources>

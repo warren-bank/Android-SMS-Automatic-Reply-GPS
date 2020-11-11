@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS ! GPS</string>
+    <string name="menu_add">Добавяне на правило</string>
+    <string name="menu_send_silent_sms">Тихо! SMS</string>
+    <string name="label_enable">Активиране на услуга</string>
+    <string name="label_sender">Изпращачът трябва да завърши с:</string>
+    <string name="label_message">Съобщението трябва да започва с:</string>
+    <string name="label_silent_sms_recipient">Тихо! SMS До ...:</string>
+    <string name="label_button_cancel">ОТМЯНА</string>
+    <string name="label_button_delete">DELETE</string>
+    <string name="label_button_save">SAVE</string>
+    <string name="label_button_send">Скрай.</string>
+    <string name="error_missing_required_value">Грешка: Липсва липсващата стойност</string>
+    <string name="error_add_listitem">Грешка: Не може да се добави нов елемент в списъка</string>
+    <string name="error_send_silent_sms">Грешка: Не може да изпрати Silent SMS</string>
+</resources>

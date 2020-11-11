@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS 私の GPS</string>
+    <string name="menu_add">ルールの追加</string>
+    <string name="menu_send_silent_sms">サイレント送信 SMS</string>
+    <string name="label_enable">サービスを有効に</string>
+    <string name="label_sender">送信側は、:</string>
+    <string name="label_message">メッセージの先頭には、:</string>
+    <string name="label_silent_sms_recipient">サイレント送信 SMS に対する:</string>
+    <string name="label_button_cancel">キャンセル</string>
+    <string name="label_button_delete">削除</string>
+    <string name="label_button_save">セーブ</string>
+    <string name="label_button_send">送信</string>
+    <string name="error_missing_required_value">エラー: 欠落している値</string>
+    <string name="error_add_listitem">エラー: 新規項目をリストに追加できませんでした</string>
+    <string name="error_send_silent_sms">エラー: Silent を送信できませんでした SMS</string>
+</resources>

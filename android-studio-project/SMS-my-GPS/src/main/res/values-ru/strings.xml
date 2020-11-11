@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS Мой GPS</string>
+    <string name="menu_add">Добавить правило</string>
+    <string name="menu_send_silent_sms">Отправить без вывода сообщений SMS</string>
+    <string name="label_enable">Включить службу</string>
+    <string name="label_sender">Отправитель должен заканчиваться:</string>
+    <string name="label_message">Сообщение должно начинаться с:</string>
+    <string name="label_silent_sms_recipient">Отправить без вывода сообщений SMS в:</string>
+    <string name="label_button_cancel">ОТМЕНА</string>
+    <string name="label_button_delete">УДАЛИТЬ</string>
+    <string name="label_button_save">СОХРАНИТЬ</string>
+    <string name="label_button_send">ОТПРАВИТЬ</string>
+    <string name="error_missing_required_value">Ошибка: Отсутствует обязательное значение</string>
+    <string name="error_add_listitem">Ошибка: Не удалось добавить новый элемент в список</string>
+    <string name="error_send_silent_sms">Ошибка: Не удалось отправить Silent SMS</string>
+</resources>

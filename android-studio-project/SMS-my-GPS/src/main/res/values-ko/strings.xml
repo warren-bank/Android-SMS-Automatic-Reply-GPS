@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS 나의 GPS</string>
+    <string name="menu_add">규칙 추가하기</string>
+    <string name="menu_send_silent_sms">사일런트 송신 SMS</string>
+    <string name="label_enable">서비스 사용 가능</string>
+    <string name="label_sender">송신자는 다음으로 끝나야 합니다.:</string>
+    <string name="label_message">메시지는 다음으로 시작해야 함:</string>
+    <string name="label_silent_sms_recipient">사일런트 송신 SMS 에 대하여:</string>
+    <string name="label_button_cancel">취소</string>
+    <string name="label_button_delete">삭제</string>
+    <string name="label_button_save">저장</string>
+    <string name="label_button_send">보내기</string>
+    <string name="error_missing_required_value">오류: 필수 값이 누락되었습니다.</string>
+    <string name="error_add_listitem">오류: 목록에 새 항목을 추가할 수 없습니다.</string>
+    <string name="error_send_silent_sms">오류: 자동으로 전송할 수 없음 SMS</string>
+</resources>

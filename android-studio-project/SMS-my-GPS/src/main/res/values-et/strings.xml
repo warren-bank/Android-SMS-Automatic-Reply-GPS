@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS mu GPS</string>
+    <string name="menu_add">Lisa reegel</string>
+    <string name="menu_send_silent_sms">Saada vaikiv SMS</string>
+    <string name="label_enable">Teenuse lubamine</string>
+    <string name="label_sender">Saatja peab lõppema:</string>
+    <string name="label_message">Sõnum peab algama:</string>
+    <string name="label_silent_sms_recipient">Saada vaikiv SMS kuni:</string>
+    <string name="label_button_cancel">LOOBU</string>
+    <string name="label_button_delete">KUSTUTA</string>
+    <string name="label_button_save">SAVE</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">Viga: Nõutav väärtus puudub</string>
+    <string name="error_add_listitem">Viga: uue elemendi lisamine nimekirja ei saa lisada</string>
+    <string name="error_send_silent_sms">Viga: Silenti ei õnnestunud saata SMS</string>
+</resources>

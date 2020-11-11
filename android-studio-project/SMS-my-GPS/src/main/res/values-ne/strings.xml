@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS मेरो GPS</string>
+    <string name="menu_add">नियम थप्नुहोस्</string>
+    <string name="menu_send_silent_sms">मौन पठाउनुहोस् SMS</string>
+    <string name="label_enable">सेवा सक्षम पार्नुहोस्</string>
+    <string name="label_sender">प्रेषकले अन्त्य गर्नु पर्दछ:</string>
+    <string name="label_message">सन्देश सुरु हुनुपर्दछ:</string>
+    <string name="label_silent_sms_recipient">मौन पठाउनुहोस् SMS मा:</string>
+    <string name="label_button_cancel">रद्द गर्नुहोस्</string>
+    <string name="label_button_delete">मेट्नुहोस्</string>
+    <string name="label_button_save">बचत गर्नुहोस्</string>
+    <string name="label_button_send">पठाउनुहोस्</string>
+    <string name="error_missing_required_value">त्रुटि: हराएको आवश्यक मान</string>
+    <string name="error_add_listitem">त्रुटि: नयाँ वस्तु सूचीमा थप्न सकेन</string>
+    <string name="error_send_silent_sms">त्रुटि: मौन पठाउन सकेन SMS</string>
+</resources>

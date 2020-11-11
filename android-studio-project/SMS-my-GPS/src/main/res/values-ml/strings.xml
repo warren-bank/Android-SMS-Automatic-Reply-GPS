@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS എന്റെ GPS</string>
+    <string name="menu_add">നിയമം ചേര്ക്കുക</string>
+    <string name="menu_send_silent_sms">സൈലന്റ് അയയ്ക്കുക SMS</string>
+    <string name="label_enable">സേവനം പ്രാവര്ത്തികമാക്കുക</string>
+    <string name="label_sender">സെന്ഡര് അവസാനിക്കേണ്ടതുണ്ട്:</string>
+    <string name="label_message">സന്ദേശം ആരംഭിക്കേണ്ടതുണ്ട്:</string>
+    <string name="label_silent_sms_recipient">സൈലന്റ് അയയ്ക്കുക SMS അതിലേത്:</string>
+    <string name="label_button_cancel">റദ്ദാക്കുക</string>
+    <string name="label_button_delete">നീക്കം ചെയ്യുക</string>
+    <string name="label_button_save">സൂക്ഷിക്കുക</string>
+    <string name="label_button_send">അയയ്ക്കുക</string>
+    <string name="error_missing_required_value">പിശക്: ലഭ്യമായ ആവശ്യമായ മൂല്ല്യം</string>
+    <string name="error_add_listitem">പിശകു്: പട്ടികയില് പുതിയ ഇനം ചേര്ക്കുവാന് സാധ്യമായില്ല</string>
+    <string name="error_send_silent_sms">പിശകു്: സൈലന്റ് അയയ്ക്കുവാന് സാധ്യമായില്ല SMS</string>
+</resources>

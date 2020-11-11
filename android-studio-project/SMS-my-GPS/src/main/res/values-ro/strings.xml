@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS my GPS</string>
+    <string name="menu_add">Adăugare regulă</string>
+    <string name="menu_send_silent_sms">Trimitere silenţioasă SMS</string>
+    <string name="label_enable">Activare serviciu</string>
+    <string name="label_sender">Expeditorul trebuie să se termine:</string>
+    <string name="label_message">Mesajul trebuie să înceapă cu:</string>
+    <string name="label_silent_sms_recipient">Trimitere silenţioasă SMS la:</string>
+    <string name="label_button_cancel">ANULARE</string>
+    <string name="label_button_delete">DELETE</string>
+    <string name="label_button_save">SAVE</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">Eroare: Lipsă valoare necesară</string>
+    <string name="error_add_listitem">Eroare: Nu s-a putut adăuga un articol nou la listă</string>
+    <string name="error_send_silent_sms">Eroare: Nu se poate trimite Silent SMS</string>
+</resources>

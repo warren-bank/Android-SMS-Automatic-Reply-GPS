@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS tiegħi GPS</string>
+    <string name="menu_add">Artikolu 2</string>
+    <string name="menu_send_silent_sms">Ibgħat Siekta SMS</string>
+    <string name="label_enable">Is-Servizz Pubbliku</string>
+    <string name="label_sender">Mittent għandu jispiċċa b \':</string>
+    <string name="label_message">Il-messaġġ għandu jibda b \':</string>
+    <string name="label_silent_sms_recipient">Ibgħat Siekta SMS sa:</string>
+    <string name="label_button_cancel">CANCEL</string>
+    <string name="label_button_delete">ĦASSAR</string>
+    <string name="label_button_save">SAVE</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">Żball: Valur Meħtieġ Nieqes</string>
+    <string name="error_add_listitem">Żball: Ma setgħetx iżżid oġġett ġdid mal-lista</string>
+    <string name="error_send_silent_sms">Żball: Ma setax jibgħat Silent SMS</string>
+</resources>

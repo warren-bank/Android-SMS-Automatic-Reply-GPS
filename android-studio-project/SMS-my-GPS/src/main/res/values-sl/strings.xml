@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS moja GPS</string>
+    <string name="menu_add">Dodaj pravilo</string>
+    <string name="menu_send_silent_sms">Pošlji Tiho SMS</string>
+    <string name="label_enable">Omogoči storitev</string>
+    <string name="label_sender">Pošiljatelj se mora končati z:</string>
+    <string name="label_message">Sporočilo se mora začeti z:</string>
+    <string name="label_silent_sms_recipient">Pošlji Tiho SMS za:</string>
+    <string name="label_button_cancel">CANCEL</string>
+    <string name="label_button_delete">DELETE</string>
+    <string name="label_button_save">SAVE</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">Napaka: Manjka Zahtevana Vrednost</string>
+    <string name="error_add_listitem">Napaka: nove postavke ni bilo mogoče dodati na seznam</string>
+    <string name="error_send_silent_sms">Napaka: Tihega ni bilo mogoče poslati SMS</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS Saya GPS</string>
+    <string name="menu_add">Tambah Aturan</string>
+    <string name="menu_send_silent_sms">Kirim Sunyi SMS</string>
+    <string name="label_enable">Aktifkan Layanan</string>
+    <string name="label_sender">Pengirim harus diakhiri dengan:</string>
+    <string name="label_message">Pesan harus dimulai dengan:</string>
+    <string name="label_silent_sms_recipient">Kirim Sunyi SMS untuk:</string>
+    <string name="label_button_cancel">Batalkan</string>
+    <string name="label_button_delete">HAPUS</string>
+    <string name="label_button_save">SAVE</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">Kesalahan: Kehilangan Nilai yang Diperlukan</string>
+    <string name="error_add_listitem">Kesalahan: Tidak dapat menambahkan item baru ke daftar</string>
+    <string name="error_send_silent_sms">Galat: Tak bisa mengirim Silent SMS</string>
+</resources>

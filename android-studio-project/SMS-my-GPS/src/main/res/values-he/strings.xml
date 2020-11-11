@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS ה GPS</string>
+    <string name="menu_add">הוספת כלל</string>
+    <string name="menu_send_silent_sms">משלוח שקט SMS</string>
+    <string name="label_enable">הפעלת שירות</string>
+    <string name="label_sender">שולח חייב להסתיים עם:</string>
+    <string name="label_message">ההודעה חייבת להתחיל ב -:</string>
+    <string name="label_silent_sms_recipient">משלוח שקט SMS ל:</string>
+    <string name="label_button_cancel">ביטול</string>
+    <string name="label_button_delete">מחיקה</string>
+    <string name="label_button_save">שמירה</string>
+    <string name="label_button_send">שלח</string>
+    <string name="error_missing_required_value">שגיאה: ערך דרוש חסר</string>
+    <string name="error_add_listitem">שגיאה: לא ניתן להוסיף פריט חדש לרשימה</string>
+    <string name="error_send_silent_sms">שגיאה: לא ניתן לשלוח שקט SMS</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS నా GPS</string>
+    <string name="menu_add">పరిపాలన జతచేయుము</string>
+    <string name="menu_send_silent_sms">సిలెంట్ పంపు SMS</string>
+    <string name="label_enable">సేవను చేర్చు</string>
+    <string name="label_sender">సెండర్ ముగించాలి:</string>
+    <string name="label_message">సందేశం ప్రారంభించాలి:</string>
+    <string name="label_silent_sms_recipient">సిలెంట్ పంపు SMS To:</string>
+    <string name="label_button_cancel">రద్దు</string>
+    <string name="label_button_delete">తొలగించు</string>
+    <string name="label_button_save">\@ ACTION: BUTTON</string>
+    <string name="label_button_send">పంపు</string>
+    <string name="error_missing_required_value">దోషము: మినహాయించబడిన విలుణము</string>
+    <string name="error_add_listitem">దోషము: జాబితాకు కొత్త అంశమును జతచేయలేక పోయింది</string>
+    <string name="error_send_silent_sms">దోషము: సిలెంట్ పంపలేకపోయింది SMS</string>
+</resources>

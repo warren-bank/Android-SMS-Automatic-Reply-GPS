@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS мій GPS</string>
+    <string name="menu_add">Додати правило</string>
+    <string name="menu_send_silent_sms">Надіслати тихий SMS</string>
+    <string name="label_enable">Увімкнути службу</string>
+    <string name="label_sender">Відправник має закінчитися:</string>
+    <string name="label_message">Повідомлення має починатися з:</string>
+    <string name="label_silent_sms_recipient">Надіслати тихий SMS до:</string>
+    <string name="label_button_cancel">СКАСУВАТИ</string>
+    <string name="label_button_delete">ВИЛУЧИТИ</string>
+    <string name="label_button_save">ЗБЕРЕГТИ</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">Помилка: Не задано значення, що</string>
+    <string name="error_add_listitem">Помилка: не вдалося додати новий елемент до списку</string>
+    <string name="error_send_silent_sms">Помилка: не вдалося надіслати Silent SMS</string>
+</resources>

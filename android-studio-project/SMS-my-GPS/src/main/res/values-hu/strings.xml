@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS My GPS</string>
+    <string name="menu_add">Szabály hozzáadása</string>
+    <string name="menu_send_silent_sms">Selyem küldése SMS</string>
+    <string name="label_enable">Szolgáltatás engedélyezése</string>
+    <string name="label_sender">A küldőnek véget kell érnie:</string>
+    <string name="label_message">Az üzenet kezdetével kezdődik:</string>
+    <string name="label_silent_sms_recipient">Selyem küldése SMS To:</string>
+    <string name="label_button_cancel">MÉGSE</string>
+    <string name="label_button_delete">TÖRLÉS</string>
+    <string name="label_button_save">MENTÉS</string>
+    <string name="label_button_send">KÜLDÉS</string>
+    <string name="error_missing_required_value">Hiba: Hiányzó kötelező érték</string>
+    <string name="error_add_listitem">Hiba: Nem adható hozzá új elem a listához</string>
+    <string name="error_send_silent_sms">Hiba: Nem küldhető el a Silent SMS</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS ฉัน GPS</string>
+    <string name="menu_add">เพิ่มกฎ</string>
+    <string name="menu_send_silent_sms">ส่งแบบไม่โต้ตอบ SMS</string>
+    <string name="label_enable">เปิดใช้งานเซอร์วิส</string>
+    <string name="label_sender">ผู้ส่งต้องลงท้ายด้วย:</string>
+    <string name="label_message">ข้อความต้องขึ้นต้นด้วย:</string>
+    <string name="label_silent_sms_recipient">ส่งแบบไม่โต้ตอบ SMS ไปยัง:</string>
+    <string name="label_button_cancel">ยกเลิก</string>
+    <string name="label_button_delete">ลบ</string>
+    <string name="label_button_save">บันทึก</string>
+    <string name="label_button_send">ส่ง</string>
+    <string name="error_missing_required_value">ข้อผิดพลาด: ค่าที่จำเป็นหายไป</string>
+    <string name="error_add_listitem">ข้อผิดพลาด: ไม่สามารถเพิ่มรายการใหม่ลงในรายการ</string>
+    <string name="error_send_silent_sms">ข้อผิดพลาด: ไม่สามารถส่งแบบ Silent SMS</string>
+</resources>

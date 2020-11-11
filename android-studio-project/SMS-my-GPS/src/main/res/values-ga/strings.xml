@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS % 1 GPS</string>
+    <string name="menu_add">Cuir Riail Leis</string>
+    <string name="menu_send_silent_sms">Seol Silent SMS</string>
+    <string name="label_enable">Cumasaigh an tSeirbhís</string>
+    <string name="label_sender">Caithfidh an seoltóir deireadh a chur leis:</string>
+    <string name="label_message">Ní mór teachtaireacht a thosú le:</string>
+    <string name="label_silent_sms_recipient">Seol Silent SMS a:</string>
+    <string name="label_button_cancel">CEALAITHE</string>
+    <string name="label_button_delete">SCRIOS</string>
+    <string name="label_button_save">SAT</string>
+    <string name="label_button_send">SEOL</string>
+    <string name="error_missing_required_value">Earráid: Luach is gá</string>
+    <string name="error_add_listitem">Earráid: Níorbh fhéidir mír nua a chur leis an liosta</string>
+    <string name="error_send_silent_sms">Earráid: Níorbh fhéidir Síost a sheoladh SMS</string>
+</resources>

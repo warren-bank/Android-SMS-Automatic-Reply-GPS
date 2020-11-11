@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS benim GPS</string>
+    <string name="menu_add">Kural Ekle</string>
+    <string name="menu_send_silent_sms">Sessiz Gönder SMS</string>
+    <string name="label_enable">Hizmeti Etkinleştir</string>
+    <string name="label_sender">Gönderenin sona ermesi gerekir:</string>
+    <string name="label_message">İleti şu ile başlamalıdır::</string>
+    <string name="label_silent_sms_recipient">Sessiz Gönder SMS -:</string>
+    <string name="label_button_cancel">CANCEL</string>
+    <string name="label_button_delete">SİL</string>
+    <string name="label_button_save">SAKLA</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">Hata: Gerekli Değer Eksik</string>
+    <string name="error_add_listitem">Hata: Listeye yeni öğe eklenemedi</string>
+    <string name="error_send_silent_sms">Hata: Sessiz gönderilemedi SMS</string>
+</resources>

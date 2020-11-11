@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS min GPS</string>
+    <string name="menu_add">Legg til regel</string>
+    <string name="menu_send_silent_sms">Send Silent SMS</string>
+    <string name="label_enable">Aktiver tjeneste</string>
+    <string name="label_sender">Avsender må slutte med:</string>
+    <string name="label_message">Melding må begynne med:</string>
+    <string name="label_silent_sms_recipient">Send Silent SMS til:</string>
+    <string name="label_button_cancel">ANNULLER</string>
+    <string name="label_button_delete">SLETT</string>
+    <string name="label_button_save">LAGRING</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">Feil: Mangler nødvendig verdi</string>
+    <string name="error_add_listitem">Feil: Kunne ikke legge til ny vare på liste</string>
+    <string name="error_send_silent_sms">Feil: Kunne ikke sende Silent SMS</string>
+</resources>

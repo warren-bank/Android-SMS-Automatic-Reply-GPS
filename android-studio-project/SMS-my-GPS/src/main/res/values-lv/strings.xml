@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS manu GPS</string>
+    <string name="menu_add">Pievienot noteikumu</string>
+    <string name="menu_send_silent_sms">Sūtīt kluso SMS</string>
+    <string name="label_enable">Ieslēgt servisu</string>
+    <string name="label_sender">Sūtītājam ir jābeidzas ar:</string>
+    <string name="label_message">Ziņojums jāsākas ar:</string>
+    <string name="label_silent_sms_recipient">Sūtīt kluso SMS , lai:</string>
+    <string name="label_button_cancel">ATCELT</string>
+    <string name="label_button_delete">DZĒST</string>
+    <string name="label_button_save">SAVE</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">Kļūda: Trūkstošās Vajadzīgās Vērtības</string>
+    <string name="error_add_listitem">Kļūda: neizdevās pievienot sarakstam jaunu ierakstu</string>
+    <string name="error_send_silent_sms">Kļūda: neizdevās nosūtīt Silent SMS</string>
+</resources>

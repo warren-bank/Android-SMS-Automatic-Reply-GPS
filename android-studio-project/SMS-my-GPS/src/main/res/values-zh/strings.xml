@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS 我的 GPS</string>
+    <string name="menu_add">添加规则</string>
+    <string name="menu_send_silent_sms">发送静默 SMS</string>
+    <string name="label_enable">启用服务</string>
+    <string name="label_sender">发送方必须以:</string>
+    <string name="label_message">消息必须以:</string>
+    <string name="label_silent_sms_recipient">发送静默 SMS 到:</string>
+    <string name="label_button_cancel">取消</string>
+    <string name="label_button_delete">删除</string>
+    <string name="label_button_save">Save</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">错误: 缺少必需值</string>
+    <string name="error_add_listitem">错误: 无法将新项添加到列表</string>
+    <string name="error_send_silent_sms">错误: 无法发送静默 SMS</string>
+</resources>

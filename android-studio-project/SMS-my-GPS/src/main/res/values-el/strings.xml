@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS - ... GPS</string>
+    <string name="menu_add">Προσθήκη κανόνα</string>
+    <string name="menu_send_silent_sms">Αποστολή σιωπής SMS</string>
+    <string name="label_enable">Ενεργοποίηση υπηρεσίας</string>
+    <string name="label_sender">Ο αποστολέας πρέπει να τελειώνει.:</string>
+    <string name="label_message">Το μήνυμα πρέπει να αρχίζει.:</string>
+    <string name="label_silent_sms_recipient">Αποστολή σιωπής SMS προς::</string>
+    <string name="label_button_cancel">ΑΚΎΡΩΣΗ.</string>
+    <string name="label_button_delete">ΔΙΑΓΡΑΦΉ:</string>
+    <string name="label_button_save">ΑΠΟΘΉΚΕΥΣΗ:</string>
+    <string name="label_button_send">ΑΠΟΣΤΟΛΉ:</string>
+    <string name="error_missing_required_value">Σφάλμα: Λείπει η απαιτούμενη τιμή</string>
+    <string name="error_add_listitem">Σφάλμα: Δεν ήταν δυνατή η προσθήκη νέου στοιχείου στη λίστα</string>
+    <string name="error_send_silent_sms">Σφάλμα: Δεν ήταν δυνατή η αποστολή του Silent SMS</string>
+</resources>

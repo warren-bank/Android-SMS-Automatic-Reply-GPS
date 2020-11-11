@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS moje GPS</string>
+    <string name="menu_add">Pridať pravidlo</string>
+    <string name="menu_send_silent_sms">Poslať tichú SMS</string>
+    <string name="label_enable">Povoliť službu</string>
+    <string name="label_sender">Odosielateľ musí končiť:</string>
+    <string name="label_message">Správa musí začínať s:</string>
+    <string name="label_silent_sms_recipient">Poslať tichú SMS do:</string>
+    <string name="label_button_cancel">ZRUŠIŤ</string>
+    <string name="label_button_delete">VYMAZAŤ</string>
+    <string name="label_button_save">SAVE</string>
+    <string name="label_button_send">SEND</string>
+    <string name="error_missing_required_value">Chyba: Chýba vyžadovaná hodnota</string>
+    <string name="error_add_listitem">Chyba: Nebolo možné pridať novú položku do zoznamu</string>
+    <string name="error_send_silent_sms">Chyba: Nebolo možné odoslať Silent SMS</string>
+</resources>

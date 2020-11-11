@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS بلدي GPS</string>
+    <string name="menu_add">اضافة قاعدة</string>
+    <string name="menu_send_silent_sms">ارسال غير مباشر SMS</string>
+    <string name="label_enable">اتاحة الخدمة</string>
+    <string name="label_sender">يجب انهاء الراسل باستخدام:</string>
+    <string name="label_message">يجب أن تبدأ الرسالة باستخدام:</string>
+    <string name="label_silent_sms_recipient">ارسال غير مباشر SMS الى:</string>
+    <string name="label_button_cancel">الغاء</string>
+    <string name="label_button_delete">حذف</string>
+    <string name="label_button_save">حفظ</string>
+    <string name="label_button_send">ارسال</string>
+    <string name="error_missing_required_value">خطأ : القيمة المطلوبة غير موجودة</string>
+    <string name="error_add_listitem">خطأ : لا يمكن اضافة بند جديد الى الكشف</string>
+    <string name="error_send_silent_sms">خطأ : لا يمكن ارسال Silent SMS</string>
+</resources>

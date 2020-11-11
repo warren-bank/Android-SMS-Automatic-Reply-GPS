@@ -1,7 +1,9 @@
+# Node.js dev-dependencies
+node_modules/
+
 # Android generated
 bin
 gen
-libs
 obj
 lint.xml
 
