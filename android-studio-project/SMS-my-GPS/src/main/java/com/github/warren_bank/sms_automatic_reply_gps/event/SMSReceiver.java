@@ -9,9 +9,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.telephony.SmsMessage;
 import android.util.Log;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class SMSReceiver extends BroadcastReceiver {
     private static final String TAG               = "SMSReceiver";
@@ -58,6 +60,16 @@ public class SMSReceiver extends BroadcastReceiver {
 
             if (is_match) {
                 Log.i(TAG, "SMS received.\nfrom: " + sender + "\nmessage: " + body);
+
+                SmsManager sms   = SmsManager.getDefault();
+
+                ArrayList<String> sendMessages = new ArrayList<String>();
+
+                sendMessages.add("I've got your message, looking for satellites...");
+
+                Log.i(TAG, "Ack msg sent.\nto: " + sender + "\n" + sendMessages.get(0));
+
+                sms.sendMultipartTextMessage(sender, null, sendMessages, null, null);
 
                 GPSSender.notify(context, sender);
             }
